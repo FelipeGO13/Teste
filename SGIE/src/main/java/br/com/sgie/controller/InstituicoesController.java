@@ -69,7 +69,7 @@ public class InstituicoesController {
 		
 		List<Curso> listaCursos = cursoService.findAll();
 		model.addAttribute("cursos", listaCursos);
-		model.addAttribute("cursoCadastro", listaCursos);
+		model.addAttribute("cursoCadastro", new Curso());
 		return "cadastrarCurso.html";
 	}
 	
